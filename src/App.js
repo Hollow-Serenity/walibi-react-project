@@ -3,31 +3,26 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/home";
 import About from "./Components/about";
 import Ticket from "./Components/ticket";
+import geest from "./images/ghost.png";
+
 import "./App.css";
+import "./NavBar.css";
 class App extends Component {
   render() {
     return (
       <Router>
+        <img src={geest} className="geest" alt="" />
         <div className="App">
-          <ul className="App-header">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-
-            <li>
-              <Link to="/ticket">Contact Us</Link>
-            </li>
-          </ul>
+          <div className="topnav">
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/ticket">Tickets</Link>
+            <Link to="/">Contact</Link>
+          </div>
 
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
-
             <Route exact path="/about" element={<About />}></Route>
-
             <Route exact path="/ticket" element={<Ticket />}></Route>
           </Routes>
         </div>
