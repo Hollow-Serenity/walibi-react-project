@@ -1,100 +1,26 @@
-/* This is the main CSS file for the style. */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* This is the CSS part for the boxes and buttons within those boxes but also just for the home */
-.soorten_abonnementen {
-  text-align: left;
-  margin-top: 10px;
-}
-
-.bestel_knop,
-.over_ons_knop,
-.bright_nights_knop {
-  background-color: #e69e19bf;
-  border: 1px solid #e69e19bf;
-  border-radius: 15px;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  height: 50px;
-  margin-top: 20px;
-  margin-left: 60%;
-  text-align: center;
-  text-decoration: none;
-  width: 200px;
-}
-
-.boxes .container {
-  text-align: center;
-  align-items: center;
+.new-expense__controls {
+  display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-.z_index_skull {
-  position: relative;
-  z-index: 0;
-  height: 8em;
-  margin-bottom: 1em;
-  margin-top: 2em;
+.new-expense__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
-.box_float_bestellen {
-  float: right;
-  background: #a50acc51;
-  color: #fff;
-  border-radius: 10px;
-  margin: 20px 10px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-  padding: 15px 20px;
+.new-expense__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
 }
 
-.box_abonnementen {
-  flex: 1;
-  background: #1a1c18ca;
-  color: #fff;
-  border-radius: 10px;
-  margin: 20px 10px;
-  box-shadow: 0 3px 5px rgba(152, 106, 26, 0.561);
-  padding: 15px 20px;
-}
-
-.box_bestellen {
-  flex: 1;
-  background: #1a1c18ca;
-  color: #fff;
-  border-radius: 10px;
-  margin: 20px 10px;
-  box-shadow: 0 3px 5px rgba(152, 106, 26, 0.561);
-  padding: 15px 20px;
-}
-
-.box i {
-  margin-right: 10px;
-}
-
-.walibi_over_ons_foto {
-  width: 600px;
-  height: 400px;
-}
-
-@media (max-width: 768px) {
-  .header .container {
-    flex-direction: column;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .boxes .container {
-    display: block;
-    text-align: center;
-  }
+.new-expense__actions {
+  text-align: right;
 }
